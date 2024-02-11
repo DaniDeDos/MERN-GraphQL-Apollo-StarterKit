@@ -3,8 +3,14 @@ import cors from "cors";
 import { ApolloServer } from "apollo-server-express";
 import { ApolloServerPluginLandingPageGraphQLPlayground } from "@apollo/server-plugin-landing-page-graphql-playground";
 
-import { typeDefs, resolvers } from "../mergeSchema.js";
 import dbConnection from "../database/config.js";
+import { typeDefs, resolvers } from "../data/index.js";
+
+console.log("-----------------typeDefs-----------------");
+console.log(typeDefs);
+console.log("----------------resolvers----------------");
+console.log(resolvers);
+
 
 class Server {
   constructor() {
@@ -30,7 +36,9 @@ class Server {
     );
   }
 
-  GraphQL() {
+  async GraphQL() {
+
+
     this.server = new ApolloServer({
       plugins: [ApolloServerPluginLandingPageGraphQLPlayground()],
       typeDefs,

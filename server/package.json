@@ -23,6 +23,7 @@
     "express": "^4.18.2",
     "express-graphiql": "^1.0.0",
     "express-graphql": "^0.12.0",
+    "fast-glob": "^3.3.2",
     "glob": "^10.3.10",
     "graphql": "^16.8.1",
     "graphql-http": "^1.22.0",
