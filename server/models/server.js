@@ -6,12 +6,6 @@ import { ApolloServerPluginLandingPageGraphQLPlayground } from "@apollo/server-p
 import dbConnection from "../database/config.js";
 import { typeDefs, resolvers } from "../data/index.js";
 
-console.log("-----------------typeDefs-----------------");
-console.log(typeDefs);
-console.log("----------------resolvers----------------");
-console.log(resolvers);
-
-
 class Server {
   constructor() {
     this.app = express();
