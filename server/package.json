@@ -2,9 +2,9 @@
   "name": "crm-server",
   "version": "1.0.0",
   "type": "module",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "start": "nodemon ./index.js --exec",
+    "start": "nodemon ./main.js --exec",
     "dev": "nodemon"
   },
   "author": "DanyJerez",
